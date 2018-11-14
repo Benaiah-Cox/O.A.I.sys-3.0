@@ -1,6 +1,6 @@
 ﻿namespace O.A.I.sys
 {
-    partial class Form1
+    partial class VIEW
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // VIEW
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
+            this.Name = "VIEW";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

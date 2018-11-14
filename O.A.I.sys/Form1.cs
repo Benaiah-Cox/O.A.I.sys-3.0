@@ -12,7 +12,7 @@ using System.Speech.Recognition;
 using System.Diagnostics;
 namespace O.A.I.sys
 {
-    public partial class Form1 : Form
+    public partial class VIEW : Form
     {
         string Name1 = "Oasis";
         SpeechSynthesizer s = new SpeechSynthesizer();
@@ -27,12 +27,12 @@ namespace O.A.I.sys
         Boolean wake = true;
 
         Choices list = new Choices();
-        public Form1()
+        public VIEW()
         {
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
             /// ALWAAYS ADD NEW COMMANDS HERE THIS IS A LIST OF VIABLE COMMANDS KEEP LOWER CASE
 
-            list.Add(new String[] { "hello", "how are you", "What time is it", "What day is it", "I need to search the web", "open google", "wake up", "sleep", "caip", "go to sleep" });
+            list.Add(new String[] {"restart", "hello", "how are you", "What time is it", "What day is it", "I need to search the web", "open google", "wake up", "sleep", "caip", "go to sleep" });
 
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
@@ -54,7 +54,12 @@ namespace O.A.I.sys
 
             InitializeComponent();
         }
-
+      ///  public void restart()
+     //   {
+      //      Process.Start(c\)
+      //  }
+    /// <summary>
+   
         public void say(String h)
         {
             s.Speak(h);
@@ -86,7 +91,7 @@ namespace O.A.I.sys
                 {
                     //RESPONSE THROW BACK (pause)
                     //Say is a command
-                    say("HiI am" + Name1);
+                    say("Hi am" + Name1);
 
                 }
 
@@ -111,7 +116,7 @@ namespace O.A.I.sys
                 {
                     Process.Start("http://google.com");
                 }
-
+                 
             }
 
         }
