@@ -32,7 +32,7 @@ namespace O.A.I.sys
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
             /// ALWAAYS ADD NEW COMMANDS HERE THIS IS A LIST OF VIABLE COMMANDS KEEP LOWER CASE
 
-            list.Add(new String[] {"restart", "hello", "how are you", "What time is it", "What day is it", "I need to search the web", "open google", "wake up", "sleep", "caip", "go to sleep" });
+            list.Add(new String[] {"restart","lets order pizza", "hello", "how are you", "What time is it", "What day is it", "I need to search the web", "open google", "wake up", "sleep", "caip", "go to sleep" });
 
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
@@ -83,7 +83,14 @@ namespace O.A.I.sys
             if (wake == true)
             {
 
+                if (r == "lets order pizza")
+                {
+                   ‎ Process.Start("http://www.papajohns.com/‎");
 
+                        Process.Start("http://www.pizzahut.com/‎");
+
+                    
+                }
                
 
                 // What You Say (ALWAYS KEEP LOWER CASE)
@@ -114,7 +121,10 @@ namespace O.A.I.sys
                 }
                 if (r == "I need to search the web" || r == "open google")
                 {
-                    Process.Start("http://google.com");
+                    Process.Start("http://www.google.com/‎");
+                      
+                        
+
                 }
                  
             }
