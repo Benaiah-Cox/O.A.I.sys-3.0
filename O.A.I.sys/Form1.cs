@@ -83,14 +83,7 @@ namespace O.A.I.sys
             if (wake == true)
             {
 
-                if (r == "lets order pizza")
-                {
-                   ‎ Process.Start("http://www.papajohns.com/‎");
-
-                        Process.Start("http://www.pizzahut.com/‎");
-
-                    
-                }
+                
                
 
                 // What You Say (ALWAYS KEEP LOWER CASE)
@@ -126,7 +119,15 @@ namespace O.A.I.sys
                         
 
                 }
-                 
+
+                if (r == "lets order pizza")
+                {
+                   Process.Start(" http://www.papajohns.com‎/");
+
+                    say("okay, lets see whats on the menu, I like pepperoni");
+
+                }
+
             }
 
         }
