@@ -17,7 +17,7 @@ namespace O.A.I.sys
         string Name1 = "Oasis";
         SpeechSynthesizer s = new SpeechSynthesizer();
 
-
+        string Password = "user1";
 
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace O.A.I.sys
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
             /// ALWAAYS ADD NEW COMMANDS HERE THIS IS A LIST OF VIABLE COMMANDS KEEP LOWER CASE
 
-            list.Add(new String[] {"restart","lets order pizza", "hello", "how are you", "What time is it", "What day is it", "I need to search the web", "open google", "wake up", "sleep", "caip", "go to sleep" });
+            list.Add(new String[] {"restart", "open music ","lets order pizza", "hello", "how are you", "What time is it", "What day is it", "I need to search the web", "open google", "wake up", "sleep", "caip", "go to sleep" });
 
             Grammar gr = new Grammar(new GrammarBuilder(list));
 
@@ -119,6 +119,10 @@ namespace O.A.I.sys
                         
 
                 }
+
+
+                
+
 
                 if (r == "lets order pizza")
                 {
